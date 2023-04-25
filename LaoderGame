@@ -1,0 +1,9 @@
+local gamelist = {
+    [994732206]  = "https://raw.githubusercontent.com/DevLuaa/Boxfruit/main/README.md"
+    [2655311011] = "https://github.com/DevLuaa/Anime-Dimensions-Simulator/blob/main/README.md"
+    [1451439645] = ""
+}
+local checkgame = gamelist[game.gameId]
+if gamelist[game.gameId] then 
+    loadstring(game:HttpGet(checkgame))()
+end
